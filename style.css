@@ -1,0 +1,39 @@
+.shop {
+    margin-top: 2rem;
+
+}
+.section-title{
+    font-size: 180px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+.product-box{
+    position: relative;
+    padding-left: 10px;
+}
+.product-box :hover{
+    padding: 100px;
+    border: 1px solid var(--text color);
+    transition : 0.4s;
+}
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    row-gap: 60px;
+}
+.product-title{
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-weight: bold;
+    font-size: 40px;
+}

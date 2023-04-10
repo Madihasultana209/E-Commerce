@@ -1,0 +1,85 @@
+<html >
+<head>
+    <link rel="stylesheet" href="bg.css">
+<script type="text/javascript">
+    <header>
+  <div class="nav container">
+    <a href="index.html" class="logo">Go Back</a>
+    </div>
+    </header>
+function f1()
+{
+var name=document.getElementById("t1");
+var contact_no=document.getElementById("t2");
+var email=document.getElementById("t3");
+if(username.value=="" || username.value.length>10)
+{
+alert("username can't be blank value/length should not exceed 20chars");
+return false;
+}
+if(contact_no.value==""||contact_no.value.length=="10" )
+{
+alert("contact_no can't be blank value/length should not exceed 10chars");
+return false;
+}
+if(email.value=="" ||email.value==null)
+{
+alert("inavalid email");
+return false;
+}
+}
+function matchPassword() {  
+  var pw1 = document.getElementById("pswd1");  
+  var pw2 = document.getElementById("pswd2");  
+  if(pw1 != pw2)  
+  {   
+    alert("Passwords did not match");  
+  } else {  
+    alert("Password created successfully");  
+  }  
+if(pw1.value=="" ||pw1.value==null)
+{
+alert("inavalid password");
+return false;
+}
+}  
+</script>  
+ <body>  
+<center>  
+<form>  
+<h1 style="color:green">LOGIN</h1>  
+<h3> Enter your details please </h3>  
+<!-- Enter Password --> 
+</head>
+<table align="center" style="font-size: 30px;" >
+      <tr>
+        <td><label>UserName:</label></td>
+        <td><input id="t1" placeholder="your username" type="text"></td>
+      </tr>
+<tr>
+<td>  <label>Enter Password </label> </td>  
+<td><input type = "password" placeholder="Enter password" name = "pswd1"> </td><br><br>  
+  </tr>
+<!-- Enter Confirm password -->  
+<tr>
+<td> <label>Confirm Password  </label></td>  
+<td><input type = "password" placeholder="Re-enter your password" name = "pswd2"> </td><br><br>  
+</tr>
+<tr>
+        <td><label >RollNumber:</label></td>
+        <td><input id="t2" placeholder="your rollno" type="text" ></td>
+      </tr>
+<tr>
+        <td><label>Email:</label></td>
+        <td><input id="t3"  placeholder="default@gmail.com" type="text"></td>
+      </tr>
+<tr>
+<!?Click to validate confirm password -->  
+<td><button type = "submit" onclick="matchPassword()">Submit</button> </td>
+</tr>
+<!-- Click to reset fields -->  
+<td><button type = "reset" value = "Reset" >Reset</button></td>
+</table>
+</form>
+</body>
+</html>
